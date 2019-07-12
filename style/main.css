@@ -2,9 +2,22 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/fontawesome-webfont.woff);
+  }
+  @font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/fontawesome-webfont.woff2);
+  }
+  @font-face {
+    font-family: myFont;
+    src: url(../fonts/glyphicons-halflings-regular.eot);
+    
+  }
 body{
 overflow-x: hidden;
-font-family: sans-serif;
+font-family: myFirstFont;
 }
 .col-2{
     width: 50%;
@@ -218,7 +231,7 @@ right: 0;
     padding: 40px;
 }
 .about-container img{
-    width: 350px;
+    max-width: 350px;
     height: 350px;
     border: 1px solid #fff;
     
@@ -253,20 +266,23 @@ line-height: 30px;
 }
 @media screen and (max-width: 600px) {
     .about-content1{
-        flex: 1;
         background-color: #2dde98;
-        width: 50%;
+        width: 100%;
         
     }
     .about-content2{
-        flex: 1;
         background-color: #03a9f5;
-        width: 50%;
+        width: 100%;
     }
     .about-content3{
-        flex: 1;
         background-color: #ff9801;
-        width: 50%;
+        width: 100%;
+    }
+    .about-container img{
+        max-width: 100%;
+        height: 350px;
+        border: 1px solid #fff;
+        
     }
 }
 /*-------------------Services------------*/
@@ -343,15 +359,75 @@ padding: 20px;
 
 .ourfood{
     width: 100%;
+    text-align: center;
+    padding-top:20px;
 }
 .ourfood h1{
     text-align: center;
     font-size: 2.5rem;
 }
-.ourfood img{
-    width: 335px;
-    height: 25%;
+.food{
+    width:330px;
     border: 1px solid #fff;
+    height: 300px;
+    background-position: center;
+    margin: 2px;
+}
+.food p{
+    text-align: left;
+    padding: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.food p span{
+    
+    font-weight: bold;
+}
+.food1{
+    background-image: url(../images/food1.jpg);
+    
+}
+.food2{
+    background-image: url(../images/food2.jpg);
+}
+.food3{
+    background-image: url(../images/food3.jpg);
+    
+}
+.food4{
+    background-image: url(../images/food4.jpg);
+    
+}
+.food5{
+    background-image: url(../images/food5.jpg);
+    
+}
+.food6{
+    background-image: url(../images/food6.jpg);
+    
+}
+.food7{
+    background-image: url(../images/food7.jpg);
+   
+}
+.food8{
+    background-image: url(../images/food8.jpg);
+    height: 300px;
+}
+.food9{
+    background-image: url(../images/food9.jpg);
+    
+}
+.food10{
+    background-image: url(../images/food10.jpg);
+    
+}
+.food11{
+    background-image: url(../images/food11.jpg);
+}
+.food12{
+    background-image: url(../images/food12.jpg);
     
 }
 
@@ -378,22 +454,31 @@ padding: 20px;
     padding-top: 40px;
 }
 .contact h1{
-    text-align: center;
     padding-bottom: 10px;
 font-size: 2.5rem;
+text-align:center;
 }
 .contact1{
     background: #8ABE01;
     height: 500px;
     color: #fff;
-    text-align: center;
 
+}
+.contact-info{
+    width: 60%;
+    margin: auto;
+text-align: left;
 }
 .contact1 h1 {
 margin-top: 80px;
+text-align:left;
 }
 .contact1 h3{
     color: #000;
+    padding: 10px 0 10px 0;
+}
+.contact p{
+    line-height: 30px;
 }
 .contact2{
     background-image: url(../images/contact.jpg);
