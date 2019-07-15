@@ -151,8 +151,16 @@ padding-right: 2px;
     width: 100%;
 position: relative;
 }
+.bx-wrapper{
+    -moz-box-shadow:0 0 5px #ccc;
+    -webkit-box-shadow:0 0 5px #ccc;
+    box-shadow:0 0 5px #ccc;
+    border: none !important;
+    background:#fff;
+}
+   
 .bxslider{
-    margin: 0 !important;
+    margin: 0 ;
     padding: 0 !important;
     width: 100%;
 }
@@ -240,7 +248,6 @@ position: relative;
 .about-container img{
     max-width: 350px;
     height: 350px;
-    border: 1px solid #fff;
     
 }
 .about-content{
