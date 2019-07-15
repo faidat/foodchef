@@ -16,8 +16,9 @@
     
   }
 body{
-overflow-x: hidden;
-font-family: myFirstFont;
+
+font-family: 'myFirstFont',sans-serif;
+box-sizing: border-box;
 }
 .col-2{
     width: 50%;
@@ -66,33 +67,37 @@ font-family: myFirstFont;
 }
 /*------------Navbar --------------*/
 .navigation {
-    overflow: hidden;
     background-color: rgba(0, 0, 0, 0.479);
     width: 100%;
-    height: 60px;
-    line-height: 50px;
+    height: 10vh;
+    margin: 0 auto;
     position: fixed;
-    
     z-index: 1;
   }
-  .navigation ul li{
-    list-style-type: none;
-    display: inline-block;
-    
+  nav{
+width: 90%;
+margin: 0 auto;
+      padding-top: .9rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 15px;
+  }
+  nav ul{
+    display: flex;
 }
-  .navigation ul li a {
-    float: right;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+nav ul li{
+    list-style: none;
+}
+  nav ul li a {
+      text-decoration: none;
+      padding: 1rem 0;
+      margin: 0 .5rem;
+      position: relative;
+      letter-spacing: 2px;
     color: #f2f2f2;
   }
-  .navigation ul{
-    float: right;
-    margin-right: 30px;
-}
 .navigation ul li a:hover {
     background-color: #ddd;
     color: black;
@@ -102,9 +107,22 @@ font-family: myFirstFont;
     background-color: #4CAF50;
     color: white;
   }
-  
-  .navigation .icon {
-    display: none;
+  .brand{
+      font-size: 1.5rem;
+      border: 1px solid #fff;
+      background-color: rgba(255, 0, 0, 0.63);
+      color: #fff;
+      width: 157px;
+      font-weight: 300;
+      text-align: center;
+      padding-left: 4px;
+  }
+  .brand span{
+background-color: rgba(0, 0, 0, 0.795);
+border: 1px solid #fff;
+margin-left: 18px;
+padding-bottom: 2px;
+padding-right: 2px;
   }
   
   @media screen and (max-width: 600px) {
@@ -133,6 +151,11 @@ font-family: myFirstFont;
     width: 100%;
 position: relative;
 }
+.bxslider{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
 .slider-container,.slide
 { 
     height: 90vh;
@@ -145,30 +168,14 @@ position: relative;
     background-color: #000;
 }
 .slide1{
-    background-image: url(../images/slide1.jpg);
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url(../images/slide1.jpg);
     
 }
 .slide2{
-    background-image: url(../images/slide2.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(../images/slide2.jpg);
 }
 .slide3{
-    background-image: url(../images/slide3.jpg);
-}
-.slide1,.slide2,.slide3{
-    opacity: 0.8;
-     filter: alpha(opacity=70);
-}
-.prev-img{
-    cursor: pointer;
-position: absolute;
-top: 45%;
-left: 0;
-}
-.next-img{
-    cursor: pointer;
-position: absolute;
-top: 45%;
-right: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(../images/slide3.jpg);
 }
 .caption h1{
     font-size: 2.5rem;
@@ -186,7 +193,7 @@ right: 0;
     font-size: 16px;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 27%;
     transform: translate(-100%, -50%);
     letter-spacing: 2px;
     margin: 0;
@@ -197,7 +204,7 @@ right: 0;
     font-size: 25px;
     position: absolute;
     top: 70%;
-    left: 32.5%;
+    left: 29%;
     transform: translate(-100%, -50%);
     background: #8ABE01;
     border: none;
@@ -413,7 +420,6 @@ padding: 20px;
 }
 .food8{
     background-image: url(../images/food8.jpg);
-    height: 300px;
 }
 .food9{
     background-image: url(../images/food9.jpg);
@@ -429,6 +435,15 @@ padding: 20px;
 .food12{
     background-image: url(../images/food12.jpg);
     
+}
+.ourfood:last-child{
+    margin-right: 0;
+    padding: 0;
+}
+@media screen and (max-width: 400px) {
+    .food{
+        max-width: 100%;
+    }
 }
 
 /*--------Testimonials--------*/
